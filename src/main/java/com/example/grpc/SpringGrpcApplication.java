@@ -15,12 +15,12 @@ public class SpringGrpcApplication {
     public static void main(String[] args) throws IOException, InterruptedException {
         SpringApplication.run(SpringGrpcApplication.class,
                 args);
-        Server server = ServerBuilder
+        /*Server server = ServerBuilder
                 .forPort(8080)
                 .addService(new GreetService()).build();
 
         server.start();
-        server.awaitTermination();
+        server.awaitTermination();*/
     }
 
 }
