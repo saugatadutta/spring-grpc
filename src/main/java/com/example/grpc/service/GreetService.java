@@ -11,7 +11,7 @@ public class GreetService extends GreetServiceImplBase {
     public void sayHello(Messages.GreetRequest request,
             StreamObserver<Messages.GreetReply> responseObserver) {
         final Messages.GreetReply.Builder replyBuilder =
-                Messages.GreetReply.newBuilder().setName("Hello " + request.getName());
+                Messages.GreetReply.newBuilder().setName("Hello :" + request.getName());
         responseObserver.onNext(replyBuilder.build());
         responseObserver.onCompleted();
     }
