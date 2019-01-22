@@ -3,11 +3,14 @@ syntax = "proto3";
 package com.example.grpc.objects;
 
 message GreetRequest {
-    string name =1;
+    string id =1;
 }
 
 message GreetReply {
-    string name =1;
+    string id =1;
+    string firstName =2;
+    string lastName =3;
+    string country =4;
 }
 service GreetService {
     rpc SayHello ( GreetRequest) returns (  GreetReply) {}
